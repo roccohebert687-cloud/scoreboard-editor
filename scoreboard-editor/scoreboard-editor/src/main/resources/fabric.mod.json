@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "scoreboard-editor",
+  "version": "${version}",
+  "name": "Scoreboard Editor",
+  "description": "Client-side scoreboard customization mod. Edit displayed scoreboard text and numbers on your own client without affecting the server.",
+  "authors": ["ScoreboardEditor"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.scoreboardeditor.ScoreboardEditorMod"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "scoreboard-editor.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
